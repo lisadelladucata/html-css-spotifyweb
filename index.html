@@ -4,21 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+
+     <!-- Font Awesome: https://fontawesome.com/search?o=r&m=free -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- /Font Awesome -->
     <title>Spotify</title>
 </head>
 <body>
     <div class="container-wrap">
         <header>
-            <div class="header-nav">
-                <div class="header-top">
-                <img src="./img/logo-small.svg" alt="logo-mobile"><span>Spotify</span>
-                <img src="./img/home.svg" alt="home"><span>Home</span>
-                <img src="./img/search.svg" alt="serch"><span>Cerca</span>
-                <img src="./img/libreria.svg" alt="library"><span>Libreria</span>
+            <div class="header-top">
+                <div class="logo">
+                    <img src="./img/logo-small.svg" alt="logo-mobile">
+                    <img class="hidden" src="./img/logo.svg" alt="logo">
+                </div>
+                <div class="header-nav">
+                    <img src="./img/home.svg" alt="home">
+                    <span>Home</span> <br>
+                    <img src="./img/search.svg" alt="serch">
+                    <span>Cerca</span> <br>
+                    <img src="./img/libreria.svg" alt="library">
+                    <span>Libreria</span> <br>
+                    <div class="hidden">
+                        <div class="playlist">
+                            <h4>PLAYLIST</h4>
+                            <div class="plus">+</div> 
+                            <span>Crea Playlist</span>
+                            <ul>
+                                <li>
+                                    <a href="#">Nome Playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nome Playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nome Playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nome Playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nome Playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nome Playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nome Playlist</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="header-bottom">
-                  <img src="./img/download.svg" alt="download">
-                  <img src="./img/profile.svg" alt="profile">
+                  <img src="./img/download.svg" alt="download"><span>Installa app</span><br>
+                  <hr>
+                  <img id="profile" src="./img/profile.svg" alt="profile"><span>Lisa Della Ducata</span>
                 </div>
             </div>
         </header>
@@ -63,8 +104,7 @@
         </main>
         <footer>
             <div class="play-bar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, sit veniam fugiat quam fugit illum beatae delectus! Debitis placeat ducimus illum mollitia excepturi cupiditate ad! Voluptatibus magnam dolores sit dolorum.
-            In et, provident reprehenderit rem neque ut porro accusamus ullam necessitatibus qui quos molestiae nesciunt repudiandae sunt vitae. Molestias hic adipisci reprehenderit iste voluptatibus illum ea dolor, omnis alias veritatis?
-            Temporibus veritatis incidunt ut. Quia vel modi velit provident dolorem in odit odio quos id laudantium earum iusto dolore nobis, aspernatur, fuga maiores deleniti nostrum. Corrupti ducimus officiis enim facilis!
+             id laudantium earum iusto dolore nobis, aspernatur, fuga maiores deleniti nostrum. Corrupti ducimus officiis enim facilis!
             </div>
         </footer>    
     </div>

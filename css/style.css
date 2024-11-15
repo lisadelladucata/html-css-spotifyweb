@@ -12,13 +12,6 @@ DEBUG
 *************/
 main{
     background-color: rebeccapurple;
-    overflow: auto;
-    height: 100vh;
-}
-
-header{
-    background-color: brown;
-    
 }
 
 footer{
@@ -36,11 +29,17 @@ GENERAL
 
 header{
     background-color: #000000;
-    max-width: 50px ;
+    width: 50px ;
 }
 
 main{
-    width: calc(100% - 50px);
+    max-width: calc(100% - 50px);
+    overflow: auto;
+    height: 100vh;
+}
+
+footer{
+    max-height: 100px;
 }
 
 /***************
@@ -49,20 +48,28 @@ TIPOGRAFY
 /**************
 HEADER
 ***************/
+.hidden{
+    display: none;
+}
+
 header img{
-    padding: 5px;
+    padding: 10px;
 }
 
 .header-nav , .header-top{
-    height: calc(100% - 60px);
+    height: calc(100% - 85px);
 }
 
-.header-bottom img:last-child{
+.header-bottom #profile{
     background-color: #808080;
     border-radius: 100%;
 }
 
-.header-nav span{
+.header-bottom{
+    color:#808080
+}
+
+header span{
     display: none;
 }
 
@@ -72,19 +79,78 @@ MAIN
 /*************
 FOOTER
 *************/
-/*******************
-RESPONSIVE
-********************/
-
-/* spotify-s da 639 a infinito*/
-
-@media screen and (min-width: 639px;) {
-    
-    header{
-        max-width: 230px;
-    }
-
-    .header-nav span{
+/*****************
+    RESPONSIVE
+    Mobile First
+*******************/
+/* S >= 576px */
+@media screen and (min-width: 576px) {
+    .hidden{
         display: inline;
     }
+
+    .logo img:not(.hidden){
+        display: none;
+    }
+
+    header{
+        width: 200px;
+    }
+
+    main{
+        width: calc(100% - 200px);
+    }
+
+    header img:not(.hidden){
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        padding-left: 5px ;
+    }
+
+    .header-nav, .header-top {
+        height: calc(100% - 90px);
+    }
+
+    header span{
+        display: inline ;
+        color: #808080;
+        line-height: 50px;
+    }
+
+    .playlist{
+        padding-left: 10px;
+    }
+
+    .playlist .plus{
+        width: 50px;
+        height: 50px;
+        background-color: #808080;
+        font-size: 45px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .playlist ul{
+        list-style: none;
+        overflow: auto;
+        height: 10vh;
+    }
+
+    .playlist ul a{
+        text-decoration: none;
+        color: #808080;
+    }
+
+    .playlist h4{
+        color: #fff;
+        padding: 10px 0px;
+    }
+}
+/* MD >= 768px */
+@media screen and (min-width: 768px) {
+
+/* LG >= 992px */
+@media screen and (min-width: 992px) {
+    
 }
