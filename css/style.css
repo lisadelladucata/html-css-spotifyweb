@@ -127,8 +127,8 @@ FOOTER
         height: 50px;
         background-color: #808080;
         font-size: 45px;
-        text-align: center;
-        display: inline-block;
+        border: none;
+        cursor: pointer;
     }
 
     .playlist ul{
