@@ -34,8 +34,6 @@ header{
 
 main{
     max-width: calc(100% - 50px);
-    overflow: auto;
-    height: 100vh;
 }
 
 footer{
@@ -76,6 +74,26 @@ header span{
 /**************
 MAIN
 **************/
+.btn-upgrade{
+    background-color: #080b12;
+    padding: 20px;
+    text-align: right;
+}
+
+.btn-upgrade button{
+    background-color: #080b12;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.recently-played{
+    overflow: auto;
+    height: 100vh;
+}
+
 /*************
 FOOTER
 *************/
